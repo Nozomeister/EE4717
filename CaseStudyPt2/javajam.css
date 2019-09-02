@@ -1,0 +1,12 @@
+body {background-color: azure;}
+.wrapper {background-color: bisque; margin-left: 30px; margin-right: 30px; box-shadow: 5px 5px 3px grey; height: fit-content;}
+h1 {font-size: 3.5em; font-family: cursive; font-weight: bold; align-content: center; color: #df6b0c; background: bisque; border-style: none; text-align: center; text-shadow: black;}
+#leftcolumn {float: left; background-color: rgb(170, 136, 94); color:#e98f45; font-family: Arial, Helvetica, sans-serif; width: 200px; font-size: 1.5em; ;}
+#rightcolumn { background-color: #dddfc8; color:chocolate; width: 100%}
+#rightcolumn h2 {padding-top: 20px; padding-left: 30px; font-size:2em; font-family: Arial, Helvetica, sans-serif;}
+nav {text-align: center; padding-right:50px;}
+nav ul {list-style-type: none;}
+nav a {text-decoration: none; font-weight: bold;}
+footer {text-align: center; font-style: italic; height: fit-content; padding-top:10px; padding-bottom: 10px;}
+.row{display: flex;}
+#rightcolumn p {padding-left: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}

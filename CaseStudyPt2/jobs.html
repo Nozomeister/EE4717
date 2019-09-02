@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>JavaJam Coffee House</title>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = "javajam.css">
+    <style>
+         
+         fieldset {border: none;}
+         fieldset label {margin-left: 30px; display: inline-block; text-align: right;}
+         fieldset input {width: 170px;}
+         fieldset textarea { width: 200px;}
+    </style>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <header><h1>JavaJam Coffee House</h1></header>
+            <div class = "row">
+            <div id = "leftcolumn">
+                <nav>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "menu.html">Menu</a></li>
+                        <li><a href = "music.html">Music</a></li>
+                        <li><a href = "jobs.html">Jobs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id = "rightcolumn">
+                <h2>Jobs at JavaJam</h2>
+                <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk *</p>
+                <form method="GET" action="show_get.php">
+                    <fieldset>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Name: &nbsp;&nbsp;<input type="text" name = "name" id = "name" required></label><br><br>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*E-mail: &nbsp;&nbsp;<input type="email" name = "email" id = "email" required></label><br><br>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;Start Date: &nbsp;&nbsp;<input type = "date" name = "startdate" id = "startdate"></label><br><br>
+                        <label>*Experience: &nbsp;&nbsp;<textarea  type = "textarea" name = "experience" id = "experience" required></textarea></label><br><br>
+                    </fieldset>
+                    <input type="submit" value = "Apply Now" style="margin-left: 30px; margin-bottom: 20px;">
+                </form>
+            </div>
+        </div>
+                <footer>Copyright &copy; 2014 JavaJam Coffee House<br><small><a href ="mailto:HongDuc@Nguyen.com">HongDuc@Nguyen.com</a></small></footer>
+        </div>
+    </body>
+    
+</html>
