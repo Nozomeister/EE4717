@@ -1,0 +1,14 @@
+body {background-color: rgb(250, 247, 194); font-family: Verdana, Arial, sans-serif; min-width: 1000px;}
+.wrapper {background-color: rgb(204, 170, 102); margin-left: 30px; margin-right: 30px; box-shadow: 5px 5px 3px rgb(90,51,37); height: fit-content;}
+.java{margin-left: auto; margin-right: auto; display: flex;}
+.row{display: flex;}
+#leftcolumn {float: left; background-color: rgb(226, 210, 176); color:rgb(139, 130, 120); width: 200px; font-size: 1.5em; min-height: 500px; }
+#rightcolumn { background-color: rgb(245, 246, 220); color:rgb(124,74,67); width: 100%}
+#rightcolumn h2 {padding-top: 10px; padding-left: 30px; font-size:1.75em; color: rgb(46,0,1);}
+#rightcolumn p {padding-left: 30px; font-weight: bold;}
+nav {text-align: center; padding-right:50px; display: flex;}
+nav ul {list-style-type: none;}
+nav a {text-decoration: none; font-weight: bold;}
+footer {text-align: center; font-style: italic; height: fit-content; padding-top:10px; padding-bottom: 10px;}
+.priceupdate {text-align: left; color: rgb(47, 3, 2); font-weight: bold;}
+div ul {list-style-type: none;}

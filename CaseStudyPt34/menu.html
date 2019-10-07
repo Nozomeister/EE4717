@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <script type = "text/javascript" src = "javajam.js"></script>
+        <title>JavaJam Coffee House</title>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "javajam.css">
+        <style>
+            table {padding-left: 100px; padding-bottom: 50px}
+            tr:nth-of-type(odd) {background-color: rgb(210, 180, 140);}
+            tr {color: rgb(47, 3, 2); border-style: none; height: 70px; margin: auto; font-size: 1.25em;}
+            td {padding-left: 10px;}
+            .name {text-align: center; font-weight: bold; width:125px; padding-left: 0px;}
+            .textbox {
+                padding: 5px;
+                position: relative;
+                height: 70px;
+                width: 40px;
+                background-color: rgb(245, 246, 220);
+                font-size: 1em;
+
+            }
+            .sumbox {
+                padding: 5px;
+                position: relative;
+                height: 40px;
+                width: 107px;
+                background-color: rgb(245, 246, 220);
+                font-size: 1em;
+
+            }
+            .outerbox {border: none;
+                        background-color: rgb(245, 246, 220);
+                        width: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "wrapper">
+                <header><img class='java' src="javalogo.gif"></header>
+                <!------src of logo: http://personal.kent.edu/~dpearso7/lab4/javajam4/javalogo.gif-->
+                <div class = "row">
+                <div id = "leftcolumn">
+                    <nav>
+                        <ul>
+                            <li><a href = "index.html" style="color: rgb(170,139,110)">Home</a></li>
+                            <li><a href = "menu.html" style="color: rgb(170,139,110)">Menu</a></li>
+                            <li><a href = "music.html" style="color: rgb(170,139,110)">Music</a></li>
+                            <li><a href = "jobs.html" style="color: rgb(170,139,110)">Jobs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id = "rightcolumn">
+                    <h2>Coffee at JavaJam</h2>
+                    <div>
+                        <table>
+                            <tr>
+                                <td class = "name"><b>Just Java</b></td>
+                                <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>Endless Cup $2.00</td>
+                                <td class="outerbox">
+                                    <input type = "text" name = "javaNumber" id = "javaNumber" onchange="sumMoney()" class = "textbox"> 
+                                </td>
+                                <td class="outerbox">
+                                    <input type = "text" name = "javaMoney" id = "javaMoney" class = "textbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class = "name"><b>Cafe au Lait</b></td>
+                                <td>House blended coffee infused into a smooth, steamed milk.<br>
+                                    <input type = "radio" name = "cafLait" id = "cafLait1" value = "2.00" onclick="sumMoney()">Single: $2.00 &nbsp;&nbsp;
+                                    <input type = "radio" name = "cafLait" id = "cafLait2" value = "3.00" onclick="sumMoney()" >Double: $3.00
+                                </td>
+                                <td class="outerbox">
+                                    <input type = "text" name = "laitNumber" onchange="sumMoney()" id = "laitNumber" class = "textbox"> 
+                                </td>
+                                <td class="outerbox">
+                                    <input type = "text" name = "laitMoney" id = "laitMoney" class = "textbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class = "name"><b>Iced Cappucino</b></td>
+                                <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br><input type = "radio" name = "iceCap" id = "iceCap1" value = "4.75" onclick="sumMoney()">Single: $4.75 &nbsp;&nbsp;<input type = "radio" name = "iceCap" id = "iceCap2" value = "5.75" onclick="sumMoney()">Double: $5.75</td>
+                                <td class="outerbox">
+                                    <input type = "text" name = "capNumber" onchange="sumMoney()" id = "capNumber" class = "textbox">
+                                </td>
+                                <td class="outerbox">
+                                    <input type = "text" name = "capMoney" id = "capMoney" class = "textbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td style="text-align: right; padding: 5px;">
+                                    Total:
+                                </td>
+                                
+                                <td colspan="2">
+                                    <input type = "text" name = "sumMoney" id = "sumMoney" class ="sumbox">
+                                </td>
+                                <td></td>
+                               
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </header>         
+                    <footer>Copyright &copy; 2014 JavaJam Coffee House<br><small><a href ="mailto:HongDuc@Nguyen.com">HongDuc@Nguyen.com</a></small></footer>
+            </div>
+        </body>
+</html>

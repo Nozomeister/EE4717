@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>JavaJam Coffee House</title>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "javajam.css">
+        <style>
+            table {padding-left: 100px; padding-bottom: 50px}
+            tr:nth-of-type(odd) {background-color: rgb(210, 180, 140);}
+            tr {color: rgb(47, 3, 2); border-style: none; height: 70px; margin: auto; font-size: 1.25em;}
+            td {padding-left: 10px;}
+            .name {text-align: center; font-weight: bold; width:125px; padding-left: 0px;}
+        </style>
+    </head>
+    <body>
+        <div class = "wrapper">
+                <header><img class='java' src="javalogo.gif"></header>
+                <!------src of logo: http://personal.kent.edu/~dpearso7/lab4/javajam4/javalogo.gif-->
+                <div class = "row">
+                <div id = "leftcolumn">
+                    <div class = "priceupdate">
+                        <ul>
+                            <li>Product</li>
+                            <li>Price</li>
+                            <li>Update</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id = "rightcolumn">
+                    <h2>Coffee at JavaJam</h2>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><input type="checkbox"> </td>
+                                <td class = "name"><b>Just Java</b></td>
+                                <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>Endless Cup $2.00</td>
+                            </tr>
+                            <tr>
+                                <td><input type ="checkbox"></td>
+                                <td class = "name"><b>Cafe au Lait</b></td>
+                                <td>House blended coffee infused into a smooth, steamed milk.<br><input type = "radio" name = "cafLait" id = "cafLait" value = "2.00">Single: $2.00 &nbsp;&nbsp;<input type = "radio" name = "cafLait" id = "cafLait" value = "3.00" >Double: $3.00</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td class = "name"><b>Iced Cappucino</b></td>
+                                <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br><input type = "radio" name = "iceCap" id = "iceCap" value = "4.75">Single: $4.75 &nbsp;&nbsp;<input type = "radio" name = "iceCap" id = "iceCap" value = "5.75">Double: $5.75</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </header>         
+                    <footer>Copyright &copy; 2014 JavaJam Coffee House<br><small><a href ="mailto:HongDuc@Nguyen.com">HongDuc@Nguyen.com</a></small></footer>
+            </div>
+        </body>
+</html>

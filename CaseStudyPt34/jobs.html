@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <script type = "text/javascript" src = "javajam.js"></script>
+        <title>JavaJam Coffee House</title>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = "javajam.css">
+    <style>
+         form {border: none; margin-left: 30px;}
+         label {float: left; clear: left;  display: block; width: 100px; text-align: right;  padding-right: 10px;  margin-top: 10px;}
+         input, textarea{ margin-top: 10px; display: block; width: 150px;} 
+         #mySubmit {margin-left: 30px; width: auto; margin-bottom: 20px;}
+    </style>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <header><img class='java' src="javalogo.gif"></header>
+            <!------src of logo: http://personal.kent.edu/~dpearso7/lab4/javajam4/javalogo.gif-->
+            <div class = "row">
+            <div id = "leftcolumn">
+                <nav>
+                    <ul>
+                        <li><a href = "index.html" style="color: rgb(170,139,110)">Home</a></li>
+                        <li><a href = "menu.html" style="color: rgb(170,139,110)">Menu</a></li>
+                        <li><a href = "music.html" style="color: rgb(170,139,110)">Music</a></li>
+                        <li><a href = "jobs.html" style="color: rgb(170,139,110)">Jobs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id = "rightcolumn">
+                <h2>Jobs at JavaJam</h2>
+                <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk *</p>
+                <form method="GET" action="show_get.php" id = "myForm" onsubmit="event.preventDefault(); reCheck();">
+                        <label>*Name:</label><input type="text" name = "name" id = "name" required>
+                        <label>*E-mail:</label><input type="email" name = "email" id = "email" required>
+                        <label>Start Date:</label> <input type = "date" name = "startdate" id = "startdate">
+                        <label>*Experience:</label><input  type = "textarea" name = "experience" id = "experience" required>
+                    <input type="submit" id = "mySubmit" value = "Apply Now" onclick="return reCheck()">
+                </form>
+            </div>
+        </div>
+                <footer>Copyright &copy; 2014 JavaJam Coffee House<br><small><a href ="mailto:HongDuc@Nguyen.com">HongDuc@Nguyen.com</a></small></footer>
+        </div>
+        <script type="text/javascript" src="javajamr.js"></script>
+    </body>
+    
+</html>
