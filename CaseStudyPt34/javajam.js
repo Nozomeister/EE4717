@@ -37,18 +37,20 @@ function chkName(){
         inputName.select();
         return false;
     }
+    else return true;
 }
 
 function chkEmail(){
     var inputEmail = document.getElementById("email");
     var checkEmail = inputEmail.value.toString();
-    const exp = /^[\w.-]+@\w{1,3}\.[A-za-z]{2,3}$/;
+    const exp = /^[\w.-]+@(\w+\.){1,3}\w{2,3}$/;
     if (!exp.test(checkEmail)){
         alert('Your email is not correct');
         inputEmail.focus();
         inputEmail.select();
         return false;
     }
+    else return true;
 }
 
 function chkDate(){
@@ -62,11 +64,13 @@ function chkDate(){
         return false;
 
     }
+    else return true;
 }
 
 function reCheck(){
-    if(chkName() || chkEmail() || chkDate()){
+    if(!chkName() || !chkEmail() || !chkDate()){
         return false;
+        
     }
     else return true;
   

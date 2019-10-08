@@ -30,12 +30,12 @@
             <div id = "rightcolumn">
                 <h2>Jobs at JavaJam</h2>
                 <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk *</p>
-                <form method="GET" action="show_get.php" id = "myForm" onsubmit="event.preventDefault(); reCheck();">
+                <form method="GET" action="show_get.php" id = "myForm">
                         <label>*Name:</label><input type="text" name = "name" id = "name" required>
                         <label>*E-mail:</label><input type="email" name = "email" id = "email" required>
                         <label>Start Date:</label> <input type = "date" name = "startdate" id = "startdate">
                         <label>*Experience:</label><input  type = "textarea" name = "experience" id = "experience" required>
-                    <input type="submit" id = "mySubmit" value = "Apply Now" onclick="return reCheck()">
+                    <input type="submit" id = "mySubmit" value = "Apply Now" onclick="return reCheck();">
                 </form>
             </div>
         </div>
