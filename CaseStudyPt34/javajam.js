@@ -39,7 +39,24 @@ function chkName(){
     }
     else return true;
 }
-
+function chkPrice(){
+    var inputJava = document.getElementById("priceJava");
+    var inputAlSingle = document.getElementById("priceAlSingle");
+    var inputAlDouble = document.getElementById("priceAlDouble");
+    var inputIceCapSingle = document.getElementById("priceIceCapSingle");
+    var inputIceCapDouble = document.getElementById("priceIceCapDouble");
+    var checkJava = inputJava.value.toString();
+    var checkAlS = inputAlSingle.value.toString();
+    var checkAlD = inputAlDouble.value.toString();
+    var checkICS = inputIceCapSingle.value.toString();
+    var checkICD = inputIceCapDouble.value.toString();
+    const exp = /^[0-9.\r\t\n\f]/;
+    if(!exp.text(checkJava)||!exp.text(checkAlS)||!exp.text(checkAlD)||!!exp.text(checkICS)||!exp.text(checkICD)){
+        alert('Your input value is not correct');
+        return false;
+    }
+    else return true;
+}
 function chkEmail(){
     var inputEmail = document.getElementById("email");
     var checkEmail = inputEmail.value.toString();

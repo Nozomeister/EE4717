@@ -16,20 +16,23 @@
             <header><img class='java' src="javalogo.gif"></header>
             <!------src of logo: http://personal.kent.edu/~dpearso7/lab4/javajam4/javalogo.gif-->
             <div class = "row">
-            <div id = "leftcolumn">
-                <div class = "priceupdate">
-                    <ul>
-                        <li>Daily</li>
-                        <li>Sales</li>
-                        <li>Report</li>
-                    </ul>
+                <div id = "leftcolumn">
+                    <nav>
+                        <ul>
+                            <li><a href = "index.html" style="color: rgb(170,139,110)">Home</a></li>
+                            <li><a href = "menu.html" style="color: rgb(170,139,110)">Menu</a></li>
+                            <li><a href = "music.html" style="color: rgb(170,139,110)">Music</a></li>
+                            <li><a href = "jobs.html" style="color: rgb(170,139,110)">Jobs</a></li>
+                            <li><a href = "salesreports.html" style="color: rgb(170,139,110)">Sale Report</a></li>
+                            <li><a href = "updatemenu.html" style="color: rgb(170,139,110)">Update Menu</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
             <div id = "rightcolumn">
                 <h2>Click to generate daily sales report:</h2>
                 <form name = "salereport" id = "salereport" action="generate.php" method="POST">
-                    <input type = "checkbox" name = "dollar" id = "dollar" value="Yes"> Total dollar sales by products </br>
-                    <input type = "checkbox" name = "quantities" id = "quantities" value="Yes"> Sales quantities by product categories
+                    <input type = "radio" name = "report" value = "First"> Total dollar sales by products </br>
+                    <input type = "radio" name = "report" value = "Second"> Sales quantities by product categories
                     <input type = "submit" name = "submit" value = "Generate Report">
                 </form>
             </div>

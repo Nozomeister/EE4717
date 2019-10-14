@@ -10,7 +10,9 @@
             tr {color: rgb(47, 3, 2); border-style: none; height: 70px; margin: auto; font-size: 1.25em;}
             td {padding-left: 10px;}
             .name {text-align: center; font-weight: bold; width:125px; padding-left: 0px;}
+            .priceinput {width: 50px; display: inline-block;}
         </style>
+        <script type = "text/javascript" src="javajam.js"></script>
     </head>
     <body>
         <div class = "wrapper">
@@ -27,30 +29,33 @@
                     </div>
                 </div>
                 <div id = "rightcolumn">
-                    <h2>Coffee at JavaJam</h2>
+                    <h2>Click to update product prices</h2>
                     <div>
+                        <form name = "update" action="updateprice.php" method = "POST">
                         <table>
                             <tr>
-                                <td><input type="checkbox"> </td>
+                                <td><input type="checkbox" name = "changeJava" onchange="this.form.submit()"> </td>
                                 <td class = "name"><b>Just Java</b></td>
-                                <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>Endless Cup $2.00</td>
+                                <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>Endless Cup $ <input type = "text" name = "priceJava" id = "priceJava" class = "priceinput"></td>
                             </tr>
                             <tr>
-                                <td><input type ="checkbox"></td>
+                                <td><input type ="checkbox" name = "changeAuLait" onchange="this.form.submit()"></td>
                                 <td class = "name"><b>Cafe au Lait</b></td>
-                                <td>House blended coffee infused into a smooth, steamed milk.<br><input type = "radio" name = "cafLait" id = "cafLait" value = "2.00">Single: $2.00 &nbsp;&nbsp;<input type = "radio" name = "cafLait" id = "cafLait" value = "3.00" >Double: $3.00</td>
+                                <td>House blended coffee infused into a smooth, steamed milk.<br>Single: $ <input type = "text" name = "priceAlSingle" id = "priceAlSingle" class = "priceinput"> &nbsp;&nbsp;Double: $ <input type = "text" name = "priceAlDouble" id ="priceAlDouble" class = "priceinput"></td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox" name = "changeIceCap" onchange="this.form.submit()"></td>
                                 <td class = "name"><b>Iced Cappucino</b></td>
-                                <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br><input type = "radio" name = "iceCap" id = "iceCap" value = "4.75">Single: $4.75 &nbsp;&nbsp;<input type = "radio" name = "iceCap" id = "iceCap" value = "5.75">Double: $5.75</td>
+                                <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br>Single: $ <input type = "text" name = "priceIceCapSingle"  id ="priceIceCapSingle" class = "priceinput"> &nbsp;&nbsp;Double: $ <input type = "text" name =  "priceIceCapDouble" id = "priceIceCapDouble" class = "priceinput"></td>
                             </tr>
                         </table>
+                    </form>
                     </div>
                 </div>
             </div>
             </header>         
                     <footer>Copyright &copy; 2014 JavaJam Coffee House<br><small><a href ="mailto:HongDuc@Nguyen.com">HongDuc@Nguyen.com</a></small></footer>
             </div>
+        <script type="text/javascript" src="javajamr.js"></script>
         </body>
 </html>
