@@ -55,6 +55,8 @@
                 <div id = "rightcolumn">
                     <h2>Coffee at JavaJam</h2>
                     <div>
+                        <form name ="submitorder" method="POST" 
+                            action="order.php">
                         <table>
                             <tr>
                                 <td class = "name"><b>Just Java</b></td>
@@ -96,12 +98,15 @@
                                 </td>
                                 
                                 <td colspan="2">
-                                    <input type = "text" name = "sumMoney" id = "sumMoney" class ="sumbox">
+                                    <input type = "text" name = "moneySum" id = "moneySum" class ="sumbox">
                                 </td>
                                 <td></td>
-                               
                             </tr>
                         </table>
+                        
+                        <input type="submit" name = "ordersub" id = "ordersub" value = "Place your order!">
+                    </form>
+                        
                     </div>
                 </div>
             </div>

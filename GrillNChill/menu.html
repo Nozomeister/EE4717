@@ -1,0 +1,78 @@
+<!-- <?php
+    session_start();
+    if(!isset($_SESSION['cart'])){
+        $_SESSION['cart'] = array();
+    }
+    if(isset($_GET['order'])){
+        $_SESSION['cart'] =$_GET['order']; header('location'.$_SERVER['PHP_SELF'].'?'.SID);
+    exit();
+    }
+?> -->
+<head>
+	<title>Grill n Chill</title>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet"
+	   type = "text/css"
+	   href = "css/main.css">
+	   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Noto+Serif+SC|Playfair+Display|Rock+Salt&display=swap" rel="stylesheet">
+	  <script>
+		function showNav(){
+			document.getElementById("drop-down").style.display="block";
+		}
+
+		function closeNav(){
+			document.getElementById("drop-down").style.display="none";
+		}
+	  </script>   
+	<style>
+	</style>
+</head>
+<body>		
+	<header id = "header">
+		<div id="nav">
+			<button onmouseover="showNav()" onmouseleave="closeNav()" >Navigation</button>
+			<div id="drop-down" onmouseover="showNav()" onmouseleave="closeNav()">
+				<a href ="index.html">Home</a>
+				<a href ="">Menu</a>
+				<a href ="">Track Order</a>
+				<a href ="">Contact Us</a>	
+			</div>
+		</div>
+		<img id ="cart" src="img/cart.png">
+		<h1>Grill n Chill</h1>	<!--replace with an img later-->	
+		<button id="log-in">Log In</button>
+	</header>
+	<nav>
+		<table>
+			<tr>
+				<td><a href = "">Promotions</a></td>
+				<td><a href = "">For Family</a></td>
+				<td><a href = "">Alacarte</a></td>
+				<td><a href = "">Sets</a></td>
+				<td><a href = "">Sides</a></td>
+				<td><a href = "">Beverages</a></td>
+			</tr>
+		</table>
+	</nav>
+	<div id = "main-container">
+		<!-- <div id="img-container">
+			<img src="img/bg1.jpg">
+		</div> -->
+        <div id = "menunav">
+            
+        </div>
+	</div>
+	<footer id = "footer">
+		<table>	
+			<tr>
+				<td><a href="">About Us</a></td>
+				<td><a href="">Contact Us</a></td>
+				<td><a href="">Feedback</a></td>	
+			</tr>
+		</table>
+	</footer>
+
+
+	
+</body>
+</html>

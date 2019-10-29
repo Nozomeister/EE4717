@@ -23,8 +23,9 @@ function sumMoney(){
         var capMoney = numCap * 5.75;
         document.getElementById("capMoney").value = capMoney;
         }
-    var sumMoney = javaMoney + laitMoney + capMoney;
-    document.getElementById("sumMoney").value = sumMoney;
+    var moneySum = javaMoney + laitMoney + capMoney;
+    //document.getElementById("moneySum").value = moneySum;
+    document.getElementById("moneySum").setAttribute('value',moneySum);
 }
 
 function chkName(){
