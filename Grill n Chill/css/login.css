@@ -1,0 +1,103 @@
+#banner{
+	height: 170px;
+	background-color: #263036;
+	margin: 0;
+	padding:0;
+}
+
+#banner h2{
+	padding-top: 110px;
+	width: 20%;
+	margin: auto;
+	text-align: center;
+	font-size: 40px;
+	color:#d8cfc2;
+}
+
+
+#content{
+	height: 400px;
+	background-image: url('login.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	padding-top: 80px;
+
+
+}
+
+#table{
+	background-color: rgba(255,255,255,0.9);
+	width: 400px;
+	margin: auto;
+	height: 300px;
+	padding-left:10%;
+	padding-right:10%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	text-align: center;
+
+
+}
+
+#table h2{
+	padding: 0;
+	margin:0;
+	font-size: 30px;
+	color:#263036;
+	width: 80%;
+	text-align: center;
+	margin:auto;
+}
+
+#table a{
+	text-decoration: none;
+	color:#263036;
+	border: 1px solid #263036;
+	border-radius:5px;
+	padding: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;	
+	width: 250px;
+	margin:auto;
+	margin-top:10px;
+	display: block;
+}
+
+#table table{
+	width: 90%;
+	margin:auto;
+	text-align: center;
+
+
+}
+#table form{
+	padding-bottom: 0;
+
+
+}
+
+#table input[type=submit]{
+	background-color: transparent;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	color:#263036;
+	border: 1px solid #263036;
+	border-radius:5px;
+	padding: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;	
+	width: 250px;
+	margin:auto;
+	margin-top:10px;
+	display: block;
+	cursor: pointer;
+}
+
+#table input[type=text], #table input[type=password]{
+	height: 30px;
+
+}

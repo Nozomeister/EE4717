@@ -1,0 +1,47 @@
+html, body{
+	margin:0;
+	padding-top:0;
+	height:400px;
+	background-color: #d8cfc2;
+}
+#banner{
+	height: 200px;
+	background-image: url('menu.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding:0;
+}
+
+#banner h2{
+	padding-top: 110px;
+	width: 20%;
+	margin: auto;
+	text-align: center;
+	font-size: 40px;
+	color:#d8cfc2;
+}
+
+#content{
+	width:80%;
+	margin: auto;
+	height: 500px;
+	margin-top: 80px;
+
+}
+
+#content a {
+	color: #263036;
+	text-decoration:none;
+	border: 1px solid #263036;
+	border-radius: 5px;
+	padding:5px 15px 5px 15px;
+
+}
+
+#content a:hover {
+	color: #e87e31;
+	border: 1px solid #e87e31;
+}
+

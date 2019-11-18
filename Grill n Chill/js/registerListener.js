@@ -1,0 +1,10 @@
+var userNode = document.getElementById("username");
+var pw1Node = document.getElementById("password");
+var pw2Node = document.getElementById("password2");
+var phoneNode = document.getElementById("phone");
+var emailNode = document.getElementById("email");
+userNode.addEventListener("change", checkUsername, false);
+pw1Node.addEventListener("change", checkPassword, false);
+pw2Node.addEventListener("change", checkPassword2, false);
+phoneNode.addEventListener("change", checkPhone, false);
+emailNode.addEventListener("change", checkEmail, false);

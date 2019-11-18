@@ -1,0 +1,160 @@
+html, body{
+	padding:0;
+	margin:0;
+	min-height: 700px;
+	background-color:#d8cfc2;
+
+}
+
+#banner{
+	height: 200px;
+	background-color: #263036;
+	margin: 0;
+	padding:0;
+}
+
+#banner h2{
+	padding-top: 110px;
+	width: 20%;
+	margin: auto;
+	text-align: center;
+	font-size: 40px;
+	color:#d8cfc2;
+}
+
+.sub-div{
+	width: 100%;
+	display: block;
+	min-height: 500px;
+}
+
+#history{
+	height: 650px;
+	background-image: url('history.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+
+	text-align: center;
+}
+#history p{
+	width: 40%;
+	margin:auto;
+	text-align: center;
+	
+
+
+}
+
+#history h2, #history p{
+	margin:0;
+	padding:0;
+	color:#ffffff;
+}
+#history h2{
+	width: 50%;
+	margin:auto;
+	padding-top: 70px;
+	font-size: 60px;
+	text-decoration:underline;
+}
+#history p{
+	font-size: 25px;
+	width: 30%;
+	margin:auto;
+	text-align: left;
+	margin-top: 50px;
+}
+
+
+#values{
+	margin:0px;
+	width: 100%;
+	height: 400px;
+	background-color: #ffffff;
+	text-align: center;
+
+}
+
+#values h2{
+	margin:0px;
+	font-size: 70px;
+	padding-top: 30px;
+	padding-bottom:40px;
+}
+#values img{
+	width: 180px;
+	height:180px;
+}
+.value-content{
+	font-size:30px;
+	width:30%;
+	margin:auto;
+
+}
+.value-content h3{
+	text-align:center;
+
+}
+.value-content h3:hover{
+	color:#ff0000;
+
+}
+
+#values table{
+	align-content:center;
+	width: 100%;
+	background-color: #ffffff;
+}
+#values table tr{
+	width:90%;
+}
+#values table td{
+	width:33.33%;
+	align-content: center;
+
+}
+
+#goal{
+	height: 700px;
+	background-image: url('goal.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#goal-container{
+	width: 300px;
+	float:left;
+	margin-left: 60%;
+	text-align: left;
+	margin-right: 30px;
+	padding-top:18%;
+	color: #ffffff;
+
+}
+#goal h2{
+	margin:0;
+	padding:0;
+	font-size: 60px;
+	width:90%;
+	margin:auto;
+	float: left;
+	display: block;
+}
+#goal ul{
+	margin:0;
+	padding:0;
+	font-size: 30px;
+	width:100%;
+	margin:auto;
+	float: left;
+	display: block;
+}
+
+
+#goal li{
+	padding:5px 15px 5px 25px;
+}
+
+#goal li:hover{
+	color:#ff0000;
+}

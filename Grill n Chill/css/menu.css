@@ -1,0 +1,145 @@
+html, body{
+	padding:0;
+	margin:0;
+	min-height: 700px;
+	background-color:#d8cfc2;
+
+}
+
+#banner{
+	height: 200px;
+	background-image: url('menu.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding:0;
+}
+
+#banner h2{
+	padding-top: 110px;
+	width: 20%;
+	margin: auto;
+	text-align: center;
+	font-size: 40px;
+	color:#d8cfc2;
+}
+	
+
+#type-bar{
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	padding-top: 30px;
+	height: 100px;
+	background-color:#d8cfc2;
+	
+
+}
+
+#type-bar button{
+	border:0;
+	font-size: 25px;
+	background-color: transparent;
+	border-left:1px solid #263036;
+	cursor: pointer;
+	padding:5px 20px 5px 20px;
+}
+
+#type-bar button:hover{
+	background-color: #263036;
+	color:#d8cfc2;
+}
+
+#table{
+	height: 700px;
+	padding-top:20px;
+	min-height:500px;
+	background-color:#d8cfc2;
+	min-width:1000px;
+}
+
+
+.content{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding: 5%;
+	background-color: #eeeeee;
+	display: none;
+
+
+}
+
+.content h2{
+	font-size: 40px;
+	font-weight: lighter;
+	padding: 0;
+	margin:0;
+	margin-bottom: 20px;
+
+}
+
+.content table{
+	width: 100%;
+	font-size: 25px;
+	text-align: center;
+}
+
+.content tr{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.content td{
+	width: 33.33%;
+	margin: auto;
+}
+
+.content input[type=text]{
+	width: 60%;
+	height: 30px;
+
+}
+
+.content input[type = submit]{
+	width: 60%;
+	margin-top: 5px;
+	background-color: transparent;
+	border:1px solid #263036;
+	font-size: 15px;
+	padding: 5px 15px 5px 15px;
+	cursor: pointer;
+}
+
+.content input[type = submit]:hover{
+	background-color: #263036;
+	color:#d8cfc2;
+}
+
+.food-img{
+	
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.food-img p{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding-top: 20px;
+	text-align: center;
+	color:#eeeeee;
+
+	background-color: rgba(0,0,0,0.4);
+	opacity: 0;
+}
+
+.food-img p:hover{
+	opacity:1;
+}
